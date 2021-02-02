@@ -1,11 +1,7 @@
 import React from "react";
 import * as Icon from "./icons";
 
-const RemixIcon = ({
-  name = "remixicon-fill",
-  color = "black",
-  size = "24",
-}) => {
+const RemixIcon = ({ name = "remixicon-fill", color = "black", size = 24 }) => {
   const iconComponentName = name
     .split("-")
     .map(s => s[0].toUpperCase() + s.substr(1))
