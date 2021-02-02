@@ -1,5 +1,5 @@
-import * as React from 'react';
-import Svg, {Path} from 'react-native-svg';
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
 
 function SvgFilter3Line(props) {
   return (
