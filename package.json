@@ -13,21 +13,20 @@
     "react-native-svg": "*"
   },
   "devDependencies": {
-    "react": "16.13.1",
-    "react-native": "0.63.4",
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
     "@react-native-community/eslint-config": "^1.1.0",
+    "@svgr/cli": "^5.5.0",
     "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.59.0",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
     "react-test-renderer": "16.13.1"
   },
   "jest": {
     "preset": "react-native"
   },
-  "files": [
-    
-  ]
+  "files": []
 }
