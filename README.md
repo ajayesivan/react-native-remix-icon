@@ -12,7 +12,7 @@ yarn add react-native-remix-icon
 Using npm
 
 ```bash
-npm add react-native-remix-icon react-native-svg
+npm add react-native-remix-icon
 ```
 
 This library relies on the `react-native-svg` package to render svg icons. Install the `react-native-svg` package,
