@@ -11,4 +11,3 @@ function SvgBookmarkFill(props) {
 }
 
 export default SvgBookmarkFill;
-export default SvgBookMarkFill;

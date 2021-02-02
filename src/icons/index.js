@@ -225,8 +225,6 @@ export { default as Bookmark2Fill } from "./Bookmark2Fill";
 export { default as Bookmark2Line } from "./Bookmark2Line";
 export { default as Bookmark3Fill } from "./Bookmark3Fill";
 export { default as Bookmark3Line } from "./Bookmark3Line";
-export { default as BookmarkFill } from "./BookmarkFill";
-export { default as BookmarkLine } from "./BookmarkLine";
 export { default as BoxingFill } from "./BoxingFill";
 export { default as BoxingLine } from "./BoxingLine";
 export { default as BracesFill } from "./BracesFill";
