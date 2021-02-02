@@ -1,8 +1,24 @@
 {
   "name": "react-native-remix-icon",
+  "description": "Remix Icon for React Native",
+  "author": "Ajay Sivan",
   "version": "0.1.0",
-  "private": true,
   "main": "src/index.js",
+  "homepage": "https://github.com/ajayesivan/react-native-remix-icon",
+  "bugs": {
+    "url": "https://github.com/ajayesivan/react-native-remix-icon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ajayesivan/react-native-remix-icon.git"
+  },
+  "keywords": [
+    "react-native-remix-icon",
+    "remixicon",
+    "remixicon-rn",
+    "react-native",
+    "icons"
+  ],
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -46,5 +62,6 @@
       "pre-commit": "lint-staged"
     }
   },
+  "license": "MIT",
   "files": ["src"]
 }
