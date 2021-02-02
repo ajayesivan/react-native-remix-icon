@@ -5,7 +5,7 @@ import RemixIcon from "./src";
 const App = () => {
   return (
     <View style={style.container}>
-      <RemixIcon name="dv-line" color="grey" size="30" />
+      <RemixIcon name="eraser-fill" color="#006aff" size="48" />
     </View>
   );
 };
