@@ -2,7 +2,7 @@
   "name": "react-native-remix-icon",
   "description": "Remix Icon for React Native",
   "author": "Ajay Sivan",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "main": "src/index.js",
   "homepage": "https://github.com/ajayesivan/react-native-remix-icon",
   "bugs": {
