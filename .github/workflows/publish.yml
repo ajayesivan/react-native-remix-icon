@@ -1,0 +1,21 @@
+name: "Publish"
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    name: "Release"
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+      - name: "Publish"
+        run: npm publish --access public
+        env: 
+          NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
