@@ -1,4 +1,4 @@
-[![react-native-remix-icon](https://user-images.githubusercontent.com/19279756/106659815-3d84ad00-65c5-11eb-97de-369b2d77de45.png)](https://remixicon.com)
+<img src="https://user-images.githubusercontent.com/19279756/106659815-3d84ad00-65c5-11eb-97de-369b2d77de45.png" width="500">
 
 # React Native Remix Icon
 React native implementation for the popular [RemixIcon](https://remixicon.com) open source library.
