@@ -16,6 +16,6 @@ jobs:
         with:
           node-version: "14"
       - name: "Publish"
-        uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NODE_AUTH_TOKEN }}
+        run: npm publish --access public
+        env: 
+          NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
