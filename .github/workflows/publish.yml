@@ -1,3 +1,4 @@
+
 name: "Publish"
 
 on:
@@ -15,9 +16,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "14"
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm install
       - name: "Publish"
-        run: npm publish
-        env: 
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN_PUBLISH }}
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NODE_AUTH_TOKEN }}
