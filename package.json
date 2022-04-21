@@ -2,8 +2,8 @@
   "name": "react-native-remix-icon",
   "description": "Remix Icon for React Native",
   "author": "Ajay Sivan",
-  "version": "0.3.0",
-  "main": "src/index.js",
+  "version": "1.0.0",
+  "main": "lib/index.js",
   "homepage": "https://github.com/ajayesivan/react-native-remix-icon",
   "bugs": {
     "url": "https://github.com/ajayesivan/react-native-remix-icon/issues"
@@ -17,13 +17,12 @@
     "remixicon",
     "remixicon-rn",
     "react-native",
-    "icons"
+    "icons",
+    "vector icons",
+    "svg icons",
+    "icon library"
   ],
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
     "lint": "eslint .",
     "svg-to-rn": "npx @svgr/cli --native -d src/icons icons"
   },
@@ -31,27 +30,18 @@
     "react-native-svg": "*"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/runtime": "^7.8.4",
     "@react-native-community/eslint-config": "^1.1.0",
     "@svgr/cli": "^5.5.0",
-    "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
     "husky": "^4.3.8",
-    "jest": "^25.1.0",
     "lint-staged": "^10.5.3",
-    "metro-react-native-babel-preset": "^0.59.0",
     "prettier": "^2.2.1",
     "react": "16.13.1",
     "react-native": "0.63.4",
-    "react-native-svg": "^12.1.0",
-    "react-test-renderer": "16.13.1"
-  },
-  "jest": {
-    "preset": "react-native"
+    "react-native-svg": "^12.1.0"
   },
   "lint-staged": {
-    "src/**/*.js": [
+    "src/**/*.[ts, tsx]": [
       "prettier --write",
       "eslint --fix",
       "git add"
@@ -64,6 +54,6 @@
   },
   "license": "MIT",
   "files": [
-    "src"
+    "lib"
   ]
 }
