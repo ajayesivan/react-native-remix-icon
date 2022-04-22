@@ -28,7 +28,9 @@
     "svg-to-rn": "npx @svgr/cli --native -d src/icons icons"
   },
   "peerDependencies": {
-    "react-native-svg": "*"
+    "react-native-svg": "*",
+    "react": "*",
+    "react-native": "*"
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^1.1.0",

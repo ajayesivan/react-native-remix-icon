@@ -1,24 +1,16 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "commonjs",
-    "lib": ["es2017"],
-    "allowJs": true,
+    "lib": ["es5", "es6", "esnext.asynciterable"],
+    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": false,
     "jsx": "react-native",
-    "declaration": true,
-    "outDir": "./lib",
-    "removeComments": true,
-    "noEmit": true,
-    "isolatedModules": true,
-    "strict": true,
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true
+    "strict": true,
+    "target": "esnext",
+    "resolveJsonModule": true,
+    "outDir": "./lib",
+    "declaration": true
   },
-  "exclude": [
-    "node_modules",
-    "examples"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "examples", "src-old"]
 }
