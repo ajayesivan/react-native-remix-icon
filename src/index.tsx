@@ -1,14 +1,23 @@
-import React from 'react';
-import { Text } from 'react-native';
+import React from "react";
+import { Text } from "react-native";
+import * as Icons from "./icons";
 
 type Props = {
-  text: string;
-}
+  name: string;
+  size?: number;
+  color?: string;
+  type?: "fill" | "line";
+};
 
-const RemixIcon = ({text}: Props) => {
-  return(
-    <Text style={{fontSize: 50}}>Hello, {text}</Text>
-  );
+const RemixIcon = ({
+  name,
+  size = 24,
+  color = "#000",
+  type = "fill",
+}: Props) => {
+  const Icon = Icons[name + "-" + type];
+
+  return <Icon size={size} color={color} />;
 };
 
 export default RemixIcon;
