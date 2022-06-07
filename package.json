@@ -25,7 +25,7 @@
   "scripts": {
     "lint": "eslint .",
     "build": "tsc -p .",
-    "svg-to-rn": "npx @svgr/cli --native -d src/icons RemixIcon/icons/**"
+    "svg-to-rn": "npx @svgr/cli --native -d src/icons RemixIcon/icons/** --filename-case kebab"
   },
   "peerDependencies": {
     "react-native-svg": "*",
