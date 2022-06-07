@@ -15,7 +15,7 @@ const RemixIcon = ({
   color = "#000",
   type = "fill",
 }: Props) => {
-  const Icon = Icons[name + "-" + type];
+  const Icon = Icons[name];
 
   return <Icon size={size} color={color} />;
 };
