@@ -1,9 +1,13 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
 import RemixIcon from 'react-native-remix-icon';
 
 const App = () => {
-  return <RemixIcon text="Hello" />;
+  return (
+    <SafeAreaView>
+      <RemixIcon text="Hello 1" />
+    </SafeAreaView>
+  );
 };
 
 export default App;
