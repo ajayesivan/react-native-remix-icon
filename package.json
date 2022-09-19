@@ -4,6 +4,7 @@
   "author": "Ajay Sivan",
   "version": "0.3.0",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "homepage": "https://github.com/ajayesivan/react-native-remix-icon",
   "bugs": {
     "url": "https://github.com/ajayesivan/react-native-remix-icon/issues"
