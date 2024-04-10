@@ -3,9 +3,13 @@ import Svg, { Path } from "react-native-svg";
 
 function SvgFridgeFill(props) {
   return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M20 12v10a1 1 0 01-1 1H5a1 1 0 01-1-1V12h16zM9 14H7v5h2v-5zM19 1a1 1 0 011 1v8H4V2a1 1 0 011-1h14zM9 4H7v4h2V4z" />
+    <Svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <Path d="M19.998 12v10a1 1 0 01-1 1h-14a1 1 0 01-1-1V12h16zm-11 2h-2v5h2v-5zm10-13a1 1 0 011 1v8h-16V2a1 1 0 011-1h14zm-10 3h-2v4h2V4z" />
     </Svg>
   );
 }

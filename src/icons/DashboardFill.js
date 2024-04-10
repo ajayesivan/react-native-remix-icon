@@ -3,9 +3,13 @@ import Svg, { Path } from "react-native-svg";
 
 function SvgDashboardFill(props) {
   return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z" />
+    <Svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <Path d="M3 12a1 1 0 001 1h6a1 1 0 001-1V4a1 1 0 00-1-1H4a1 1 0 00-1 1v8zm0 8a1 1 0 001 1h6a1 1 0 001-1v-4a1 1 0 00-1-1H4a1 1 0 00-1 1v4zm10 0a1 1 0 001 1h6a1 1 0 001-1v-8a1 1 0 00-1-1h-6a1 1 0 00-1 1v8zm1-17a1 1 0 00-1 1v4a1 1 0 001 1h6a1 1 0 001-1V4a1 1 0 00-1-1h-6z" />
     </Svg>
   );
 }

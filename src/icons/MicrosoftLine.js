@@ -3,9 +3,13 @@ import Svg, { Path } from "react-native-svg";
 
 function SvgMicrosoftLine(props) {
   return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M11 5H5v6h6V5zm2 0v6h6V5h-6zm6 8h-6v6h6v-6zm-8 6v-6H5v6h6zM3 3h18v18H3V3z" />
+    <Svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <Path d="M11.001 5h-6v6h6V5zm2 0v6h6V5h-6zm6 8h-6v6h6v-6zm-8 6v-6h-6v6h6zm-8-16h18v18h-18V3z" />
     </Svg>
   );
 }

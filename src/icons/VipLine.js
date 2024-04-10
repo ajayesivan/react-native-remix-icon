@@ -3,9 +3,13 @@ import Svg, { Path } from "react-native-svg";
 
 function SvgVipLine(props) {
   return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M2 19h20v2H2v-2zm9-11h2v8h-2V8zM7.965 8h2.125l-2.986 7.964h-2L2.118 8h2.125l1.861 5.113L7.965 8zM17 14v2h-2V8h4a3 3 0 010 6h-2zm0-4v2h2a1 1 0 000-2h-2zM2 3h20v2H2V3z" />
+    <Svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <Path d="M2.005 19h20v2h-20v-2zm9-11h2v8h-2V8zM7.97 8l-1.86 5.113L4.247 8H2.123l2.986 7.964h2L10.095 8H7.97zm9.035 6v2h-2V8h4a3 3 0 010 6h-2zm0-4v2h2a1 1 0 100-2h-2zm-15-7h20v2h-20V3z" />
     </Svg>
   );
 }

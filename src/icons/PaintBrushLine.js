@@ -3,9 +3,13 @@ import Svg, { Path } from "react-native-svg";
 
 function SvgPaintBrushLine(props) {
   return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M5 5v3h14V5H5zM4 3h16a1 1 0 011 1v5a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm2 9h6a1 1 0 011 1v3h1v6h-4v-6h1v-2H5a1 1 0 01-1-1v-2h2v1zm11.732 1.732l1.768-1.768 1.768 1.768a2.5 2.5 0 11-3.536 0z" />
+    <Svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <Path d="M5 4.997v3h14v-3H5zm-1-2h16a1 1 0 011 1v5a1 1 0 01-1 1H4a1 1 0 01-1-1v-5a1 1 0 011-1zm2 9h6a1 1 0 011 1v3h1v6h-4v-6h1v-2H5a1 1 0 01-1-1v-2h2v1zm11.732 1.732L19.5 11.96l1.768 1.768a2.5 2.5 0 11-3.536 0z" />
     </Svg>
   );
 }
