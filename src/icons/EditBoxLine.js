@@ -1,13 +1,13 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function SvgEditBoxLine(props) {
-  return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M16.757 3l-2 2H5v14h14V9.243l2-2V20a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1h12.757zm3.728-.9L21.9 3.516l-9.192 9.192-1.412.003-.002-1.417L20.485 2.1z" />
-    </Svg>
-  );
-}
-
+const SvgEditBoxLine = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <Path d="m16.757 2.997-2 2H5v14h14V9.239l2-2v12.758a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-16a1 1 0 0 1 1-1zm3.728-.9L21.9 3.511l-9.193 9.193-1.412.002-.002-1.416z" />
+  </Svg>
+);
 export default SvgEditBoxLine;

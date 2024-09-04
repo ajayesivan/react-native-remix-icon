@@ -1,13 +1,13 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function SvgVuejsLine(props) {
-  return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M3.316 3L12 18l8.684-15H23L12 22 1 3h2.316zm4.342 0L12 10.5 16.342 3h2.316L12 14.5 5.342 3h2.316z" />
-    </Svg>
-  );
-}
-
+const SvgVuejsLine = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <Path d="M3.317 3 12 18l8.684-15h2.316l-11 19-11-19zm4.342 0L12 10.5 16.343 3h2.316L12 14.5 5.343 3z" />
+  </Svg>
+);
 export default SvgVuejsLine;

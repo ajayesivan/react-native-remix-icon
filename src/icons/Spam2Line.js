@@ -1,13 +1,13 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function SvgSpam2Line(props) {
-  return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M15.936 2.5L21.5 8.067v7.87L15.936 21.5h-7.87L2.5 15.936v-7.87L8.066 2.5h7.87zm-.829 2H8.894L4.501 8.895v6.213l4.393 4.394h6.213l4.394-4.394V8.894l-4.394-4.393zM11 15h2v2h-2v-2zm0-8h2v6h-2V7z" />
-    </Svg>
-  );
-}
-
+const SvgSpam2Line = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <Path d="m15.936 2.501 5.565 5.565v7.87l-5.565 5.565h-7.87l-5.565-5.565v-7.87l5.565-5.565zm-.828 2H8.894L4.501 8.894v6.214L8.894 19.5h6.214l4.393-4.393V8.894zM11 15.001h2v2h-2zm0-8h2v6h-2z" />
+  </Svg>
+);
 export default SvgSpam2Line;

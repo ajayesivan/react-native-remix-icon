@@ -1,13 +1,13 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function SvgFlightLandFill(props) {
-  return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M10.254 10.47l-.37-8.382 1.933.518 2.81 9.035 5.261 1.41a1.5 1.5 0 11-.776 2.898L4.14 11.937l.776-2.898.242.065.914 3.35-2.627-.703a1 1 0 01-.74-.983l.09-5.403 1.449.388.914 3.351 5.096 1.366zM4 19h16v2H4v-2z" />
-    </Svg>
-  );
-}
-
+const SvgFlightLandFill = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <Path d="M20.949 14.888a1.5 1.5 0 0 1-1.837 1.06L3.445 11.752a1 1 0 0 1-.74-.983l.09-5.403 1.449.388.915 3.351 5.095 1.366-.37-8.382 1.933.518 2.81 9.035 5.261 1.41a1.5 1.5 0 0 1 1.061 1.837M4 19h16v2H4z" />
+  </Svg>
+);
 export default SvgFlightLandFill;

@@ -1,13 +1,13 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function SvgSendPlaneLine(props) {
-  return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M1.923 9.37c-.51-.205-.504-.51.034-.689l19.086-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.475.553-.717.07L11 13 1.923 9.37zm4.89-.2l5.636 2.255 3.04 6.082 3.546-12.41L6.812 9.17z" />
-    </Svg>
-  );
-}
-
+const SvgSendPlaneLine = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <Path d="m21.727 2.957-5.454 19.086c-.15.529-.475.553-.717.07L11 13 1.923 9.37c-.51-.205-.503-.51.034-.689L21.043 2.32c.529-.176.832.12.684.638m-2.692 2.14L6.812 9.17l5.637 2.255 3.04 6.08z" />
+  </Svg>
+);
 export default SvgSendPlaneLine;

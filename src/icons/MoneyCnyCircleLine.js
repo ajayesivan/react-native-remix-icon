@@ -1,13 +1,13 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function SvgMoneyCnyCircleLine(props) {
-  return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm1-7h3v2h-3v2h-2v-2H8v-2h3v-1H8v-2h2.586L8.464 7.879 9.88 6.464 12 8.586l2.121-2.122 1.415 1.415L13.414 10H16v2h-3v1z" />
-    </Svg>
-  );
-}
-
+const SvgMoneyCnyCircleLine = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <Path d="M12.005 22.003c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10m0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16m1-7h3v2h-3v2h-2v-2h-3v-2h3v-1h-3v-2h2.586L8.469 7.88l1.415-1.414 2.12 2.122 2.122-2.122 1.414 1.414-2.12 2.122h2.585v2h-3z" />
+  </Svg>
+);
 export default SvgMoneyCnyCircleLine;
