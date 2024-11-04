@@ -3,26 +3,8 @@ import * as Icon from "./icons";
 import { Text } from "react-native";
 import camelCase from "camelcase";
 
-// export function transformFilename(
-//   filename
-//   filenameCase
-// ): string {
-//   switch (filenameCase) {
-//     case 'kebab':
-//       return dashify(filename.replace(/_/g, '-'), { condense: true })
-//     case 'camel':
-//       return camelCase(filename)
-//     case 'pascal':
-//       return camelCase(filename, { pascalCase: true })
-//     case 'snake':
-//       return snakeCase(filename)
-//     default:
-//       throw new Error(`Unknown --filename-case ${filenameCase}`)
-//   }
-// }
-
-// Function from svgr: https://github.com/gregberge/svgr/blob/main/packages/cli/src/util.ts#L65
-const formatExportName = name => {
+// A combination of transformFilename & formatExportName functions from svgr: https://github.com/gregberge/svgr/blob/main/packages/cli/src/util.ts
+const getIconName = name => {
   name = camelCase(name, { pascalCase: true });
   if (/[-]/g.test(name) && /^\d/.test(name)) {
     return `Svg${camelCase(name, { pascalCase: true })}`;
@@ -44,7 +26,7 @@ const RemixIcon = ({
   // The icon name from remixicon.com UI starts with "ri-", so we need to remove this prefix if present.
   name = name.startsWith("ri-") ? name.substring(3) : name;
 
-  const iconComponentName = formatExportName(name);
+  const iconComponentName = getIconName(name);
   const Component = Icon[iconComponentName];
 
   return Component ? (
