@@ -2,7 +2,7 @@ export { default as Svg24HoursFill } from "./24HoursFill";
 export { default as Svg24HoursLine } from "./24HoursLine";
 export { default as Svg4KFill } from "./4KFill";
 export { default as Svg4KLine } from "./4KLine";
-export { default as AB } from "./AB";
+export { default as Ab } from "./AB";
 export { default as AccountBox2Fill } from "./AccountBox2Fill";
 export { default as AccountBox2Line } from "./AccountBox2Line";
 export { default as AccountBoxFill } from "./AccountBoxFill";

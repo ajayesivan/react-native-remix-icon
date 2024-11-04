@@ -1,17 +1,13 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function SvgBrain2Fill(props) {
-  return (
-    <Svg
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-      {...props}
-    >
-      <Path d="M8.5 2a3.5 3.5 0 00-3.46 4.03A3.5 3.5 0 003.05 12a3.5 3.5 0 00.963 5.67A4 4 0 0011 20.646V3.05A3.49 3.49 0 008.501 2zM13 3.05v17.596a4 4 0 006.986-2.977A3.5 3.5 0 0020.95 12a3.5 3.5 0 00-1.99-5.97A3.5 3.5 0 0013 3.05z" />
-    </Svg>
-  );
-}
-
+const SvgBrain2Fill = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <Path d="M8.5 2a3.5 3.5 0 0 0-3.46 4.03A3.5 3.5 0 0 0 3.05 12a3.5 3.5 0 0 0 .963 5.67Q4 17.832 4 18a4 4 0 0 0 7 2.646V3.05A3.5 3.5 0 0 0 8.5 2M13 3.05v17.596a4 4 0 0 0 6.986-2.977A3.5 3.5 0 0 0 20.95 12a3.5 3.5 0 0 0-1.99-5.97q.04-.26.041-.53a3.5 3.5 0 0 0-6-2.45" />
+  </Svg>
+);
 export default SvgBrain2Fill;
