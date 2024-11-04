@@ -1,10 +1,13 @@
 <img src="https://user-images.githubusercontent.com/19279756/106659815-3d84ad00-65c5-11eb-97de-369b2d77de45.png" width="500">
 
 # React Native Remix Icon
+
 React native implementation for the popular [RemixIcon](https://remixicon.com) open source library.
 
 ### Install
+
 Using yarn
+
 ```bash
 yarn add react-native-remix-icon
 ```
@@ -20,15 +23,17 @@ This library relies on the `react-native-svg` package to render svg icons. Insta
 ```bash
 yarn add react-native-svg
 ```
+
 or
+
 ```bash
 npm install react-native-svg
 ```
 
-
 ### Usage
+
 ```javascript
-import Icon from 'react-native-remix-icon';
+import Icon from "react-native-remix-icon";
 ```
 
 ```javascript
@@ -36,8 +41,13 @@ import Icon from 'react-native-remix-icon';
 ```
 
 ### Props
-|Prop|Default|Description|
-|----|-----|-----|
-|name|`remixicon-fill`| Name of the icon. Explore the [remixicon](https://remixicon.com) library for all valid icon names|
-|size|`24`|Size of the icon|
-|color| `black`| Color of the icon|
+
+| Prop  | Default          | Description                                                                                       |
+| ----- | ---------------- | ------------------------------------------------------------------------------------------------- |
+| name  | `remixicon-fill` | Name of the icon. Explore the [remixicon](https://remixicon.com) library for all valid icon names |
+| size  | `24`             | Size of the icon                                                                                  |
+| color | `black`          | Color of the icon                                                                                 |
+
+### Version Alignment
+
+The version of `react-native-remix-icon` is aligned with the original [RemixIcon](https://remixicon.com) package. For example, version `4.5.0` of `react-native-remix-icon` contains all the icons from version `4.5.0` of the RemixIcon library.
