@@ -1,0 +1,17 @@
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+
+function SvgLayout4Fill(props) {
+  return (
+    <Svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <Path d="M11 13v8H4a1 1 0 01-1-1v-7h8zm2-10h7a1 1 0 011 1v16a1 1 0 01-1 1h-7V3zM3 4a1 1 0 011-1h7v8H3V4z" />
+    </Svg>
+  );
+}
+
+export default SvgLayout4Fill;

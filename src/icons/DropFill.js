@@ -1,0 +1,17 @@
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+
+function SvgDropFill(props) {
+  return (
+    <Svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <Path d="M5.636 6.633L12 .269l6.364 6.364a9 9 0 11-12.728 0z" />
+    </Svg>
+  );
+}
+
+export default SvgDropFill;
