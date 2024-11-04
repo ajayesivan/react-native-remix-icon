@@ -59,9 +59,7 @@
     ]
   },
   "exports": {
-    "./icons/*": {
-      "default": "./src/icons/*.js"
-    }
+    "./icons/*": "./src/icons/*"
   },
   "husky": {
     "hooks": {
