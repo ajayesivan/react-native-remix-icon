@@ -26,7 +26,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "svg-to-rn": "npx @svgr/cli --native -d src/icons icons"
+    "svg-to-rn": "npx @svgr/cli --native --filename-case kebab -d src/icons icons"
   },
   "peerDependencies": {
     "react-native-svg": "*"

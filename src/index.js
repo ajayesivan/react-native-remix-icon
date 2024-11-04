@@ -8,6 +8,7 @@ const RemixIcon = ({
   size = 24,
   ...props
 }) => {
+  // In remicicon.com UI the icon name starts with ri- thats why we have this check here.
   name = name.startsWith("ri-") ? name.substring(3) : name;
 
   const iconComponentName = name
