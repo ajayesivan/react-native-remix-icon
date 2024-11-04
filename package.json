@@ -58,9 +58,6 @@
       "git add"
     ]
   },
-  "exports": {
-    "./icons/*": "./src/icons/*"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
