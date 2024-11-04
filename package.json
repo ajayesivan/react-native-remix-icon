@@ -63,9 +63,6 @@
       "pre-commit": "lint-staged"
     }
   },
-  "exports": {
-    "./icons/*": "./src/icons/*"
-  },
   "license": "MIT",
   "files": [
     "src"
