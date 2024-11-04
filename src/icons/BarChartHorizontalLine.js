@@ -5,6 +5,8 @@ const SvgBarChartHorizontalLine = props => (
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     viewBox="0 0 24 24"
+    width={24}
+    height={24}
     {...props}
   >
     <Path d="M12 3v2H3V3zm4 16v2H3v-2zm6-8v2H3v-2z" />

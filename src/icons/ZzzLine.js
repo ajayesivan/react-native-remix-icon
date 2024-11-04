@@ -5,6 +5,8 @@ const SvgZzzLine = props => (
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     viewBox="0 0 24 24"
+    width={24}
+    height={24}
     {...props}
   >
     <Path d="M11 11v2l-5.327 6H11v2H3v-2l5.326-6H3v-2zm10-8v2l-5.327 6H21v2h-8v-2l5.326-6H13V3z" />

@@ -5,6 +5,8 @@ const SvgArrowRightSLine = props => (
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     viewBox="0 0 24 24"
+    width={24}
+    height={24}
     {...props}
   >
     <Path d="m13.172 12-4.95-4.95 1.414-1.413L16 12l-6.364 6.364-1.414-1.415z" />

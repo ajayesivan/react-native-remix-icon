@@ -26,7 +26,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "svg-to-rn": "npx @svgr/cli --native -d src/icons icons"
+    "svg-to-rn": "npx @svgr/cli --native -d src/icons icons --svg-props 'width={24}' --svg-props 'height={24}'"
   },
   "peerDependencies": {
     "react-native-svg": "*"

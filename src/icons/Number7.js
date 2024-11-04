@@ -5,6 +5,8 @@ const SvgNumber7 = props => (
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     viewBox="0 0 24 24"
+    width={24}
+    height={24}
     {...props}
   >
     <Path d="M19 2v1.5L10.763 22H8.574l8.013-18H6V2z" />

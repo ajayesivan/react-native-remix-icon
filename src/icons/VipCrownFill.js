@@ -5,6 +5,8 @@ const SvgVipCrownFill = props => (
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     viewBox="0 0 24 24"
+    width={24}
+    height={24}
     {...props}
   >
     <Path d="M2.005 19h20v2h-20zm0-14 5 3 5-6 5 6 5-3v12h-20z" />

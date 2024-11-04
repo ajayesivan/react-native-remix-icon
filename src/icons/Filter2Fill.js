@@ -5,6 +5,8 @@ const SvgFilter2Fill = props => (
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     viewBox="0 0 24 24"
+    width={24}
+    height={24}
     {...props}
   >
     <Path d="M10 14 4 5V3h16v2l-6 9v6l-4 2z" />
