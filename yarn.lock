@@ -8424,23 +8424,24 @@ __metadata:
     prettier: "npm:^2.2.1"
     react: "npm:16.13.1"
     react-native: "npm:0.63.4"
-    react-native-svg: "npm:^12.1.0"
+    react-native-svg: "npm:^15.8.0"
     react-test-renderer: "npm:16.13.1"
   peerDependencies:
     react-native-svg: "*"
   languageName: unknown
   linkType: soft
 
-"react-native-svg@npm:^12.1.0":
-  version: 12.5.1
-  resolution: "react-native-svg@npm:12.5.1"
+"react-native-svg@npm:^15.8.0":
+  version: 15.8.0
+  resolution: "react-native-svg@npm:15.8.0"
   dependencies:
     css-select: "npm:^5.1.0"
     css-tree: "npm:^1.1.3"
+    warn-once: "npm:0.1.1"
   peerDependencies:
     react: "*"
-    react-native: ">=0.50.0"
-  checksum: 10c0/20fc5f9ac4c2a841aa4087d202c23f20ab7d49c4a7aa4f82307b08fd3962bae8008942a4b95bc16250b72c94829e3a858f29716f388a924c7feb58e030ee08d7
+    react-native: "*"
+  checksum: 10c0/03d2cb19c799da6ba41dea0dc414338d01a55549ea4e4a370315c8ec34e1c6de430a62b538f099423060edc8bea6df134f765bde862770059404617c3c296af8
   languageName: node
   linkType: hard
 
@@ -10391,6 +10392,13 @@ __metadata:
   dependencies:
     makeerror: "npm:1.0.x"
   checksum: 10c0/c726d584482985fc5bd96a87fec0c5b804c4badf5e7cafdeb736204390a7ed222bb5cdce9e2dace7655ea23f9c8efa96fdd3217d8f64f86c5d509d5fed865ab4
+  languageName: node
+  linkType: hard
+
+"warn-once@npm:0.1.1":
+  version: 0.1.1
+  resolution: "warn-once@npm:0.1.1"
+  checksum: 10c0/f531e7b2382124f51e6d8f97b8c865246db8ab6ff4e53257a2d274e0f02b97d7201eb35db481843dc155815e154ad7afb53b01c4d4db15fb5aa073562496aff7
   languageName: node
   linkType: hard
 
