@@ -3,8 +3,27 @@ import * as Icon from "./icons";
 import { Text } from "react-native";
 import camelCase from "camelcase";
 
+// export function transformFilename(
+//   filename
+//   filenameCase
+// ): string {
+//   switch (filenameCase) {
+//     case 'kebab':
+//       return dashify(filename.replace(/_/g, '-'), { condense: true })
+//     case 'camel':
+//       return camelCase(filename)
+//     case 'pascal':
+//       return camelCase(filename, { pascalCase: true })
+//     case 'snake':
+//       return snakeCase(filename)
+//     default:
+//       throw new Error(`Unknown --filename-case ${filenameCase}`)
+//   }
+// }
+
 // Function from svgr: https://github.com/gregberge/svgr/blob/main/packages/cli/src/util.ts#L65
 const formatExportName = name => {
+  name = camelCase(name, { pascalCase: true });
   if (/[-]/g.test(name) && /^\d/.test(name)) {
     return `Svg${camelCase(name, { pascalCase: true })}`;
   }
