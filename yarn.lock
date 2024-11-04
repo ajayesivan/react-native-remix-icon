@@ -3034,6 +3034,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"camelcase@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "camelcase@npm:8.0.0"
+  checksum: 10c0/56c5fe072f0523c9908cdaac21d4a3b3fb0f608fb2e9ba90a60e792b95dd3bb3d1f3523873ab17d86d146e94171305f73ef619e2f538bd759675bc4a14b4bff3
+  languageName: node
+  linkType: hard
+
 "caniuse-lite@npm:^1.0.30001669":
   version: 1.0.30001677
   resolution: "caniuse-lite@npm:1.0.30001677"
@@ -8739,6 +8746,7 @@ __metadata:
     "@react-native-community/eslint-config": "npm:^1.1.0"
     "@svgr/cli": "npm:^8.1.0"
     babel-jest: "npm:^25.1.0"
+    camelcase: "npm:^8.0.0"
     eslint: "npm:^6.5.1"
     husky: "npm:^4.3.8"
     jest: "npm:^25.1.0"

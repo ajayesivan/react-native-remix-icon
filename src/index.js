@@ -1,6 +1,20 @@
 import React from "react";
 import * as Icon from "./icons";
 import { Text } from "react-native";
+import camelCase from "camelcase";
+
+// Function from svgr: https://github.com/gregberge/svgr/blob/main/packages/cli/src/util.ts#L65
+const formatExportName = name => {
+  if (/[-]/g.test(name) && /^\d/.test(name)) {
+    return `Svg${camelCase(name, { pascalCase: true })}`;
+  }
+
+  if (/^\d/.test(name)) {
+    return `Svg${name}`;
+  }
+
+  return camelCase(name, { pascalCase: true });
+};
 
 const RemixIcon = ({
   name = "remixicon-fill",
@@ -8,13 +22,10 @@ const RemixIcon = ({
   size = 24,
   ...props
 }) => {
-  // In remicicon.com UI the icon name starts with ri- thats why we have this check here.
+  // The icon name from remixicon.com UI starts with "ri-", so we need to remove this prefix if present.
   name = name.startsWith("ri-") ? name.substring(3) : name;
 
-  const iconComponentName = name
-    .split("-")
-    .map(s => s[0].toUpperCase() + s.substr(1))
-    .join("");
+  const iconComponentName = formatExportName(name);
   const Component = Icon[iconComponentName];
 
   return Component ? (
