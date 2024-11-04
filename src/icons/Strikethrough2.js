@@ -1,13 +1,15 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function SvgStrikethrough2(props) {
-  return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M13 9h-2V6H5V4h14v2h-6v3zm0 6v5h-2v-5h2zM3 11h18v2H3v-2z" />
-    </Svg>
-  );
-}
-
+const SvgStrikethrough2 = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    width={24}
+    height={24}
+    {...props}
+  >
+    <Path d="M13 9h-2V6H5V4h14v2h-6zm0 6v5h-2v-5zM3 11h18v2H3z" />
+  </Svg>
+);
 export default SvgStrikethrough2;

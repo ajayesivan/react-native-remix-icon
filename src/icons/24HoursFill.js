@@ -1,13 +1,15 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function Svg24HoursFill(props) {
-  return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M12 13a3 3 0 012.08 5.162L12.17 20H15v2H9v-1.724l3.693-3.555A1 1 0 1011 16H9a3 3 0 013-3zm6 0v4h2v-4h2v9h-2v-3h-4v-6h2zM4 12a7.985 7.985 0 003 6.246v2.416A9.995 9.995 0 012 12h2zm8-10c5.185 0 9.449 3.947 9.95 9h-2.012A8.001 8.001 0 005.865 6.865L8 9H2V3l2.447 2.446A9.98 9.98 0 0112 2z" />
-    </Svg>
-  );
-}
-
+const Svg24HoursFill = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    width={24}
+    height={24}
+    {...props}
+  >
+    <Path d="M12.005 13.003a3 3 0 0 1 2.08 5.162l-1.91 1.837h2.83v2h-6l-.001-1.724 3.694-3.555a1 1 0 1 0-1.693-.72h-2a3 3 0 0 1 3-3m6 0v4h2v-4h2v9h-2v-3h-4v-6zm-14-1a7.99 7.99 0 0 0 3 6.246v2.416a10 10 0 0 1-5-8.662zm8-10c5.185 0 9.449 3.946 9.95 9h-2.012A8.001 8.001 0 0 0 5.87 6.868l2.135 2.135h-6v-6L4.45 5.449a9.98 9.98 0 0 1 7.554-3.446" />
+  </Svg>
+);
 export default Svg24HoursFill;

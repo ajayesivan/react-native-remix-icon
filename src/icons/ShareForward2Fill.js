@@ -1,13 +1,15 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function SvgShareForward2Fill(props) {
-  return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M4 19h16v-5h2v6a1 1 0 01-1 1H3a1 1 0 01-1-1v-6h2v5zm8-9H9a5.992 5.992 0 00-4.854 2.473A8.003 8.003 0 0112 6V2l8 6-8 6v-4z" />
-    </Svg>
-  );
-}
-
+const SvgShareForward2Fill = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    width={24}
+    height={24}
+    {...props}
+  >
+    <Path d="M4 19h16v-5h2v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-6h2zm8-9H9a6 6 0 0 0-4.854 2.473A8 8 0 0 1 12 6V2l8 6-8 6z" />
+  </Svg>
+);
 export default SvgShareForward2Fill;

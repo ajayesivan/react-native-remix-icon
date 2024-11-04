@@ -1,13 +1,15 @@
 import * as React from "react";
 import Svg, { Path } from "react-native-svg";
-
-function SvgPrinterCloudFill(props) {
-  return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path d="M10.566 17A4.737 4.737 0 0010 19.25c0 1.023.324 1.973.877 2.75H7v-5h3.566zm6.934-4a3.5 3.5 0 013.5 3.5l-.001.103a2.75 2.75 0 01-.581 5.392L20.25 22h-5.5l-.168-.005a2.75 2.75 0 01-.579-5.392L14 16.5a3.5 3.5 0 013.5-3.5zM21 8a1 1 0 011 1l.001 4.346A5.482 5.482 0 0017.5 11l-.221.004A5.503 5.503 0 0012.207 15H5v5H3a1 1 0 01-1-1V9a1 1 0 011-1h18zM8 10H5v2h3v-2zm9-8a1 1 0 011 1v3H6V3a1 1 0 011-1h10z" />
-    </Svg>
-  );
-}
-
+const SvgPrinterCloudFill = props => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
+    viewBox="0 0 24 24"
+    width={24}
+    height={24}
+    {...props}
+  >
+    <Path d="M7 2h10a1 1 0 0 1 1 1v3H6V3a1 1 0 0 1 1-1m15 7a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2v-5h7.194q.364-1.337 1.417-2.39Q15.22 11 17.5 11t3.89 1.61q.34.343.61.714zM8 10v2H5v-2zm13 6.5a3.5 3.5 0 1 0-7 0l.003.102a2.751 2.751 0 0 0 .58 5.393l.167.005h5.5l.168-.005a2.75 2.75 0 0 0 .58-5.392zM7 17h3.562A4.6 4.6 0 0 0 10 19.25q0 1.548.871 2.75H7z" />
+  </Svg>
+);
 export default SvgPrinterCloudFill;
