@@ -51,3 +51,8 @@ import Icon from "react-native-remix-icon";
 ### Version Alignment
 
 The version of `react-native-remix-icon` is aligned with the original [RemixIcon](https://remixicon.com) package. For example, version `4.5.0` of `react-native-remix-icon` contains all the icons from version `4.5.0` of the RemixIcon library.
+
+-----------
+
+### Buy me a coffee
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ajayesivan)
