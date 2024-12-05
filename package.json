@@ -67,8 +67,5 @@
   "files": [
     "src"
   ],
-  "packageManager": "yarn@4.5.1",
-  "dependencies": {
-    "camelcase": "^8.0.0"
-  }
+  "packageManager": "yarn@4.5.1"
 }

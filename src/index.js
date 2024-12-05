@@ -1,20 +1,33 @@
 import React from "react";
 import * as Icon from "./icons";
 import { Text } from "react-native";
-import camelCase from "camelcase";
 
 // A combination of transformFilename & formatExportName functions from svgr: https://github.com/gregberge/svgr/blob/main/packages/cli/src/util.ts
 const getIconName = name => {
-  name = camelCase(name, { pascalCase: true });
-  if (/[-]/g.test(name) && /^\d/.test(name)) {
-    return `Svg${camelCase(name, { pascalCase: true })}`;
-  }
+  let result = name
+    .split("-")
+    .map(word => {
+      if (/^\d/.test(word)) {
+        return word
+          .split("")
+          .map((char, charIndex) =>
+            /^\d$/.test(char)
+              ? char
+              : charIndex === 0
+              ? char
+              : char.toUpperCase()
+          )
+          .join("");
+      }
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join("");
 
   if (/^\d/.test(name)) {
-    return `Svg${name}`;
+    result = `Svg${result}`;
   }
 
-  return camelCase(name, { pascalCase: true });
+  return result;
 };
 
 const RemixIcon = ({
