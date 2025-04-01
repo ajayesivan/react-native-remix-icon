@@ -7,7 +7,7 @@ declare interface RemixIconProps {
 declare const RemixIcon: React.FC<RemixIconProps>;
 export default RemixIcon;
 
-type IconName =
+export type IconName =
   | "4k-fill"
   | "24-hours-line"
   | "4k-line"
