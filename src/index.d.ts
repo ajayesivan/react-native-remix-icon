@@ -2,6 +2,7 @@ declare interface RemixIconProps {
   name: IconName;
   size?: number | string;
   color?: string;
+  fallback?: JSX.Element | null;
   [key: string]: any;
 }
 declare const RemixIcon: React.FC<RemixIconProps>;
