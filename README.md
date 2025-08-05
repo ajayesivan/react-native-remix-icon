@@ -37,7 +37,7 @@ import Icon from "react-native-remix-icon";
 ```
 
 ```javascript
-<Icon name="home-fill" size="48" color="red">
+<Icon name="home-fill" size="48" color="red" fallback={null}>
 ```
 
 ### Props
@@ -47,6 +47,7 @@ import Icon from "react-native-remix-icon";
 | name  | `remixicon-fill` | Name of the icon. Explore the [remixicon](https://remixicon.com) library for all valid icon names |
 | size  | `24`             | Size of the icon                                                                                  |
 | color | `black`          | Color of the icon                                                                                 |
+| fallback | `<Text>Invalid Icon Name</Text>` | Fallback component when invalid name is provided. `null` value will not display anything |
 
 ### Version Alignment
 
