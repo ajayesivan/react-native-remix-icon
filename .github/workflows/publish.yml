@@ -11,11 +11,11 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: "14"
+          node-version: "18"
       - name: "Publish"
         uses: JS-DevTools/npm-publish@v1
         with:
