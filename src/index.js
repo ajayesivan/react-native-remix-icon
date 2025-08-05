@@ -34,10 +34,11 @@ const RemixIcon = ({
   name = "remixicon-fill",
   color = "black",
   size = 24,
+  fallback = <Text>Invalid Icon Name</Text>,
   ...props
 }) => {
   if (!name) {
-    return fallback === undefined ? (<Text>Invalid Icon Name</Text>) : fallback;
+    return fallback;
   }
   // The icon name from remixicon.com UI starts with "ri-", so we need to remove this prefix if present.
   name = name.startsWith("ri-") ? name.substring(3) : name;
@@ -47,9 +48,9 @@ const RemixIcon = ({
 
   return Component ? (
     <Component {...props} fill={color || "black"} width={size} height={size} />
-  ) :
-    fallback === undefined ? (<Text>Invalid Icon Name</Text>) : fallback
-  ;
+  ) : (
+    fallback
+  );
 };
 
 export default RemixIcon;
