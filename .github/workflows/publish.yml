@@ -37,7 +37,4 @@ jobs:
           fi
       - name: Publish to npm
         if: steps.check_version.outputs.skip == 'false'
-        env:
-          # Required for Yarn to authenticate with npm using GitHub OIDC
-          NODE_AUTH_TOKEN: ${{ steps.auth.outputs.token }}
-        run: yarn npm publish
+        run: npm publish --provenance --access public
