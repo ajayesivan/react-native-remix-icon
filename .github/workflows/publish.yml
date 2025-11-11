@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: "18"
           registry-url: "https://registry.npmjs.org"
+      - name: Enable Corepack
+        run: corepack enable
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Check if version already exists
