@@ -38,3 +38,5 @@ jobs:
       - name: Publish to npm
         if: steps.check_version.outputs.skip == 'false'
         run: yarn npm publish
+        env:
+          NPM_CONFIG_PROVENANCE: true
