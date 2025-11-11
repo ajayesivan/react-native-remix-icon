@@ -5,24 +5,36 @@ on:
     types: [published]
 
 permissions:
-  id-token: write # Required for OIDC
+  id-token: write
   contents: read
 
 jobs:
-  publish:
-    runs-on: ubuntu-latest
+  release:
+    name: "Release"
+    runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: "20"
           registry-url: "https://registry.npmjs.org"
-
-      # Ensure npm 11.5.1 or later is installed
-      - name: Update npm
-        run: npm install -g npm@latest
-      - run: npm ci
-      - run: npm run build --if-present
-      - run: npm test
-      - run: npm publish
+      - name: Enable Corepack
+        run: corepack enable
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Check if version already exists
+        id: check_version
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          if npm view react-native-remix-icon@$VERSION > /dev/null 2>&1; then
+            echo "Version $VERSION already exists on npm"
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "Version $VERSION does not exist, proceeding with publish"
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+      - name: Publish to npm
+        if: steps.check_version.outputs.skip == 'false'
+        run: npm publish
